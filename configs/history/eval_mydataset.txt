@@ -1,0 +1,18 @@
+### INPUT
+expname = eval_mydataset
+rootdir = /home/void/xyx/IBRNet/  # REPLACE THIS with YOUR PATH.
+ckpt_path = /home/void/xyx/IBRNet/out/pretraining/model_250000.pth   # REPLACE THIS with YOUR PATH.
+distributed = False
+
+## dataset
+eval_dataset = mydataset_20
+eval_scenes = cg_24
+
+### TESTING
+chunk_size = 4096
+
+### RENDERING
+N_importance = 64
+N_samples = 64
+inv_uniform = True
+white_bkgd = False
